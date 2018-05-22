@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+/**************************************************  **************************************************/
+.login a {margin-right:20px;text-decoration:none;color:gray;font-family:Nanum Pen Script,cursive;font-size:18px;float:right;}
+#pageName h1{font-family:Nanum Pen Script,cursive;font-size:100px;text-align:center;padding-top:22px;margin-bottom:0px;}
+#pageName p{font-family:Nanum Pen Script,cursive;font-size:17px;text-align:center;margin:0px 0px 0px 0px;}
+.pager-active {border: 2px solid #5280DD;}
+.gallery-container {max-width: 50%; max-height: 50%; margin: 0 auto;}
+.bx-viewport {width: 100%;}
+ul, menu, dir {margin: auto;}
+.bx-wrapper {margin-bottom: 10px;}
+.menu {font-family:Nanum Pen Script,cursive;font-size:20px;color:gray;margin:70px;text-decoration:none;text-align:center;}
+.login a {cursor:pointer;}
+
+/************************************************** 로그인 창 관련 **************************************************/
+/* 아이디 비밀번호 쓰는 공간 */
+input[type=text], input[type=password] {width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;}
+
+/* login버튼 css*/
+button {background-color: yellowgreen;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 100%;}
+/* 버튼에 마우스올리면 투명도 조절*/
+button:hover {opacity: 0.8;}
+
+/* 밑에 취소 버튼 크기 및 색 조정*/
+.cancelbtn {width: auto;padding: 10px 18px;background-color: #f44336;} 
+/*회원가입 취소버튼*/
+.cancelbtn2 {width: auto;padding: 14px 20px;}
+/* x(닫기)아이콘 위치 조정 */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+/*
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}*/
+/* 로그인창 양옆 16px씩 띄우기*/
+.container {
+    padding: 16px;
+    width:100%;
+}
+/*비밀번호찾기 위치 지정*/
+span.password {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Modal div background 설정*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* 로그인창 아이디 비번쓰는 div background 설정 */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */
+}
+
+/* x버튼 크기및 위치 조정 */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/*마우스가 x버튼에 올라가면 빨강색으로 변경*/
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* 로그인창이 뜨는 속도 조절 */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/************************************************** footer **************************************************/
+footer {background-color:white; clear:both; height:75px; text-align:center;padding-top:40px;}
